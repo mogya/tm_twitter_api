@@ -85,17 +85,17 @@ if you like the OAuth Adapter, consider donating to [David][donation].
 Japanese
 ------------
 
- ±Ñ¸ì¤ÏÈè¤ì¤Ş¤¹¤Í:-)
+ è‹±èªã¯ç–²ã‚Œã¾ã™ã­:-)
 
- Titanium mobile ¤«¤é twitter API¤ò¸Æ¤Ó½Ğ¤¹¤¿¤á¤Î¥é¥Ã¥Ñ¡¼¥¯¥é¥¹¤Ç¤¹¡£
-Æ±ÍÍ¤Îµ¡Ç½¤ò»ı¤Ä¤â¤Î¤È¤·¤Æ¡¢[David Riccitelli][david] ¤Î['Twitter oAuth Implementation for Titanium Mobile'][oauth_link]¤¬Í­Ì¾¤Ê¤Î¤Ç¤¹¤¬¡¢
-¤³¤Î¥é¥¤¥Ö¥é¥ê¡¢GET¤¬¤Ç¤­¤Ê¤«¤Ã¤¿¤ê¡¢API¤Î¸Æ¤Ó½Ğ¤·¤¬½ª¤ï¤ë¤¿¤Ó¤ËËè²ó¥İ¥Ã¥×¥¢¥Ã¥×¤ò½Ğ¤µ¤Ê¤¤¤È¤¤¤±¤Ê¤¤¤È¤«¡¢¤¤¤í¤¤¤íÌäÂê¤¬¤¢¤Ã¤¿¤Î¤Ç
-[titanium-hatena-oauth-sample][titanium-hatena-oauth-sample]¤ò»²¹Í¤Ë½ñ¤­´¹¤¨¤Ş¤·¤¿¡£
+ Titanium mobile ã‹ã‚‰ twitter APIã‚’å‘¼ã³å‡ºã™ãŸã‚ã®ãƒ©ãƒƒãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
+åŒæ§˜ã®æ©Ÿèƒ½ã‚’æŒã¤ã‚‚ã®ã¨ã—ã¦ã€[David Riccitelli][david] ã®['Twitter oAuth Implementation for Titanium Mobile'][oauth_link]ãŒæœ‰åãªã®ã§ã™ãŒã€
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã€GETãŒã§ããªã‹ã£ãŸã‚Šã€APIã®å‘¼ã³å‡ºã—ãŒçµ‚ã‚ã‚‹ãŸã³ã«æ¯å›ãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—ã‚’å‡ºã•ãªã„ã¨ã„ã‘ãªã„ã¨ã‹ã€ã„ã‚ã„ã‚å•é¡ŒãŒã‚ã£ãŸã®ã§
+[titanium-hatena-oauth-sample][titanium-hatena-oauth-sample]ã‚’å‚è€ƒã«æ›¸ãæ›ãˆã¾ã—ãŸã€‚
 
   [oauth_link]: http://developer.appcelerator.com/blog/2010/07/twitter-oauth-implementation-for-titanium-mobile.html
   [david]: http://ziodave.tumblr.com/
   [titanium-hatena-oauth-sample]: https://github.com/hatena/titanium-hatena-oauth-sample
 
-¤Ä¤¤¤Ç¤Ë¡¢twitterAPI¤ò´ÊÃ±¤Ë¸Æ¤Ó½Ğ¤»¤ë¤è¤¦¤Ë¤·¤¿twitter\_api.js¤È¤¤¤¦¥é¥Ã¥Ñ¡¼¥¯¥é¥¹¤òºî¤ê¤Ş¤·¤¿¡£
-API¥É¥­¥å¥á¥ó¥È¤Ë½ñ¤¤¤Æ¤¢¤ëÌ¾Á°¤È°ú¿ô¤ÇAPI¤ò¸Æ¤Ó½Ğ¤¹¤³¤È¤¬¤Ç¤­¤Æ¡¢onSuccess¤È¤«¡¢onError¤È¤¤¤Ã¤¿ÉáÄÌ¤Î¥³¡¼¥ë¥Ğ¥Ã¥¯´Ø¿ô¤Ç½èÍı¤ò¹Ô¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
-¾Ü¤·¤¯¤Ï¾åµ­(±Ñ¸ì¤ÎÉôÊ¬¤Î)¥µ¥ó¥×¥ë¥³¡¼¥É¤ò¤´Í÷¤¯¤À¤µ¤¤¡£
+ã¤ã„ã§ã«ã€twitterAPIã‚’ç°¡å˜ã«å‘¼ã³å‡ºã›ã‚‹ã‚ˆã†ã«ã—ãŸtwitter\_api.jsã¨ã„ã†ãƒ©ãƒƒãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã‚’ä½œã‚Šã¾ã—ãŸã€‚
+APIãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã«æ›¸ã„ã¦ã‚ã‚‹åå‰ã¨å¼•æ•°ã§APIã‚’å‘¼ã³å‡ºã™ã“ã¨ãŒã§ãã¦ã€onSuccessã¨ã‹ã€onErrorã¨ã„ã£ãŸæ™®é€šã®ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯é–¢æ•°ã§å‡¦ç†ã‚’è¡Œã†ã“ã¨ãŒã§ãã¾ã™ã€‚
+è©³ã—ãã¯ä¸Šè¨˜(è‹±èªã®éƒ¨åˆ†ã®)ã‚µãƒ³ãƒ—ãƒ«ã‚³ãƒ¼ãƒ‰ã‚’ã”è¦§ãã ã•ã„ã€‚
