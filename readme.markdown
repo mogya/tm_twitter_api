@@ -32,40 +32,40 @@ put twitter\_api.js,oauth\_adapter.js,oauth.js and sha1.js to yourproject/Resour
 How to use
 ------------
 
-		Ti.include("lib/twitter_api.js");
-		//initialization
-		Ti.App.twitterApi = new TwitterApi({
-		  consumerSecret:'YOUR SECRET of twitter API',
-		  consumerKey:'YOUR CONSUMER KEY of twitter API'
-		});
-		var twitterApi = Ti.App.twitterApi;
-		twitterApi.init(); 
+	Ti.include("lib/twitter_api.js");
+	//initialization
+	Ti.App.twitterApi = new TwitterApi({
+		consumerKey:'YOUR CONSUMER KEY of twitter API',
+		consumerSecret:'YOUR SECRET of twitter API'
+	});
+	var twitterApi = Ti.App.twitterApi;
+	twitterApi.init(); 
 
 When you call twitterApi.init, the library open a web browser UI to request the oauth authorization process if needs.
 
-		//status update
-		twitterApi.statuses_update({
-			onSuccess: function(responce){
-				Ti.API.info('tweet success');
-				Ti.API.info(responce);
-			},
-			onError: function(error){
-				Ti.API.error(error);
-			},
-			parameters:{status: 'yah! this is my first tweet from twitter_api.js! '}
-		});
-		
-		//get tweets
-		twitterApi.statuses_home_timeline({
-			onSuccess: function(tweets){
-				for(var i=0;i<tweets.length;i++){
-					// now you can use tweets[i].user.name, tweets[i].text, etc..
-				}
-			},
-			onError: function(error){
-				Ti.API.error(error);
+	//status update
+	twitterApi.statuses_update({
+		onSuccess: function(responce){
+			Ti.API.info('tweet success');
+			Ti.API.info(responce);
+		},
+		onError: function(error){
+			Ti.API.error(error);
+		},
+		parameters:{status: 'yah! this is my first tweet from twitter_api.js! '}
+	});
+
+	//get tweets
+	twitterApi.statuses_home_timeline({
+		onSuccess: function(tweets){
+			for(var i=0;i<tweets.length;i++){
+				// now you can use tweets[i].user.name, tweets[i].text, etc..
 			}
-		});
+		},
+		onError: function(error){
+			Ti.API.error(error);
+		}
+	});
 
 license
 ------------
