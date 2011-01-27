@@ -46,7 +46,7 @@ When you call twitterApi.init, the library open a web browser UI to request the 
 	//status update
 	twitterApi.statuses_update({
 		onSuccess: function(responce){
-			Ti.API.info('tweet success');
+			alert('tweet success');
 			Ti.API.info(responce);
 		},
 		onError: function(error){
