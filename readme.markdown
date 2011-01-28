@@ -59,7 +59,8 @@ When you call twitterApi.init, the library open a web browser UI to request the 
 	twitterApi.statuses_home_timeline({
 		onSuccess: function(tweets){
 			for(var i=0;i<tweets.length;i++){
-				// now you can use tweets[i].user.name, tweets[i].text, etc..
+				var tweet = tweets[i];
+				// now you can use tweet.user.name, tweet.text, etc..
 			}
 		},
 		onError: function(error){
