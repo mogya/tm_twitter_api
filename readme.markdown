@@ -69,13 +69,13 @@ When you call twitterApi.init, the library open a web browser UI to request the 
 	});
 
 Some API has optional parameters.
+
 	twitterApi.users_show({
 		user_id:'5574572', //parameters.
 		onSuccess: function(ret){
 			Ti.API.debug(ret);
 		}
 	});
-
 
 license
 ------------
