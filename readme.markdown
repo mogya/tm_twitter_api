@@ -6,39 +6,15 @@ This is a library to call [twitter api][twitterapi] from [titanium mobile][tm] p
   [twitterapi]: http://dev.twitter.com/doc
   [tm]: http://www.appcelerator.com/products/titanium-mobile-application-development/
 
-How are this library related to 'Twitter oAuth Implementation for Titanium Mobile'
-------------
-
- ['Twitter oAuth Implementation for Titanium Mobile'][oauth_link] by [David Riccitelli][david] is great library.
-
-  [oauth_link]: http://developer.appcelerator.com/blog/2010/07/twitter-oauth-implementation-for-titanium-mobile.html
-  [david]: http://ziodave.tumblr.com/
-
- The problem is, as far as I saw, we can't use GET method by that library, can we?
- It means I can't get the twitter timeline.
-
- So I have forked the OAuth\_adapter to use POST and GET method.
-
- Also, I wrote twitter\_api.js which is more user-friendly wrapper class.
-
-What's need
-------------
-
- Same as original oauth\_adapter.js, we need [oauth.js][oauth_js] and [sha1.js][sha1_js].
-  [oauth_js]: http://oauth.googlecode.com/svn/code/javascript/oauth.js
-  [sha1_js]: http://oauth.googlecode.com/svn/code/javascript/sha1.js
-put twitter\_api.js,oauth\_adapter.js,oauth.js and sha1.js to yourproject/Resources/lib/
-
 How to use
 ------------
 
 	Ti.include("lib/twitter_api.js");
 	//initialization
-	Ti.App.twitterApi = new TwitterApi({
+	var twitterApi = new TwitterApi({
 		consumerKey:'YOUR CONSUMER KEY of twitter API',
 		consumerSecret:'YOUR SECRET of twitter API'
 	});
-	var twitterApi = Ti.App.twitterApi;
 	twitterApi.init(); 
 
 When you call twitterApi.init, the library open a web browser UI to request the oauth authorization process if needs.
@@ -84,12 +60,24 @@ license
 
   [al2]:http://www.apache.org/licenses/LICENSE-2.0
 
-Donation
+Thanks to
 ------------
+
+ This library is forked from ['Twitter oAuth Implementation for Titanium Mobile'][oauth_link] by [David Riccitelli][david].
+
+  [oauth_link]: http://developer.appcelerator.com/blog/2010/07/twitter-oauth-implementation-for-titanium-mobile.html
+  [david]: http://ziodave.tumblr.com/
 
 if you like the OAuth Adapter, consider donating to [David][donation].
 
   [donation]:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=T5HUU4J5EQTJU&lc=IT&item_name=OAuth%20Adapter&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
+
+ See also ['Re: Twitter oAuth Implementation for Titanium Mobile'][blog_link1] about oauth-adapter story.
+  [blog_link1]: http://mogya.blog.com/2011/01/18/re-twitter-oauth-implementation-for-titanium-mobile/
+
+ Also using [oauth.js][oauth_js] and [sha1.js][sha1_js] as original OAuth Adapter.
+  [oauth_js]: http://oauth.googlecode.com/svn/code/javascript/oauth.js
+  [sha1_js]: http://oauth.googlecode.com/svn/code/javascript/sha1.js
 
 Japanese
 ------------
