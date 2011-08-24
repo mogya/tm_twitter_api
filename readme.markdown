@@ -79,6 +79,12 @@ if you like the OAuth Adapter, consider donating to [David][donation].
   [oauth_js]: http://oauth.googlecode.com/svn/code/javascript/oauth.js
   [sha1_js]: http://oauth.googlecode.com/svn/code/javascript/sha1.js
 
+FAQ: " I got an error 'Authentication needed' "
+
+ To update twitter status, you need "Read and Write" permission on [twitter API application setting][dev_twitter_com].
+
+ [dev_twitter_com]: https://dev.twitter.com/apps/
+
 Japanese
 ------------
 
